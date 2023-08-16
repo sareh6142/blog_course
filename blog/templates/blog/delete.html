@@ -1,0 +1,29 @@
+{% extends "_base.html" %}
+{% block title %}delete_page{% endblock title %}
+
+{% block content %}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-9">
+
+            <div class="card shadow my-3 p-5">
+                are you sure delete {{ post.title }}?
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <input class="btn btn-sm btn-danger" type="submit" value="yes.sure!">
+
+                </form>
+
+                    </div>
+
+
+        </div>
+        <div class="col-3">
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
